@@ -105,14 +105,45 @@ WHERE CountryID=@id;";
         {
             using (SqlConnection conn = DbHelper.GetConnection())
             {
-                const string sql = "DELETE FROM Countries WHERE CountryID=@id;";
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                conn.Open();
+                using (SqlTransaction tr = conn.BeginTransaction())
                 {
-                    cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
+                    try
+                    {
+                        void Exec(string sql)
+                        {
+                            var cmd = new SqlCommand(sql, conn, tr);
+                            cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        // 1) mapping (child) jadvallar
+                        Exec("DELETE FROM dbo.MountainsCountries WHERE CountryID=@id");
+
+                        // 2) oddiy child jadvallar
+                        Exec("DELETE FROM dbo.Regions WHERE CountryID=@id");
+
+                       
+                         Exec("DELETE FROM dbo.Cities WHERE CountryID=@id");
+                        Exec("DELETE FROM dbo.RiversCountries WHERE CountryID=@id");
+                        Exec("DELETE FROM dbo.LakesCountries WHERE CountryID=@id");
+                        Exec("DELETE FROM dbo.SeasCountries WHERE CountryID=@id");
+                        
+
+                        // 3) parent
+                        Exec("DELETE FROM dbo.Countries WHERE CountryID=@id");
+
+                        tr.Commit();
+                    }
+                    catch
+                    {
+                        tr.Rollback();
+                        throw;
+                    }
                 }
             }
         }
+
+
     }
 }

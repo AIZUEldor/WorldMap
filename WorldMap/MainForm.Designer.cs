@@ -41,9 +41,9 @@
             // 
             // btnCountries
             // 
-            this.btnCountries.Location = new System.Drawing.Point(34, 29);
+            this.btnCountries.Location = new System.Drawing.Point(34, 200);
             this.btnCountries.Name = "btnCountries";
-            this.btnCountries.Size = new System.Drawing.Size(99, 49);
+            this.btnCountries.Size = new System.Drawing.Size(160, 87);
             this.btnCountries.TabIndex = 0;
             this.btnCountries.Text = "Countries";
             this.btnCountries.UseVisualStyleBackColor = true;
@@ -51,9 +51,9 @@
             // 
             // btnCities
             // 
-            this.btnCities.Location = new System.Drawing.Point(183, 29);
+            this.btnCities.Location = new System.Drawing.Point(328, 311);
             this.btnCities.Name = "btnCities";
-            this.btnCities.Size = new System.Drawing.Size(92, 49);
+            this.btnCities.Size = new System.Drawing.Size(161, 98);
             this.btnCities.TabIndex = 1;
             this.btnCities.Text = "Cities";
             this.btnCities.UseVisualStyleBackColor = true;
@@ -61,9 +61,9 @@
             // 
             // btnRivers
             // 
-            this.btnRivers.Location = new System.Drawing.Point(34, 111);
+            this.btnRivers.Location = new System.Drawing.Point(34, 311);
             this.btnRivers.Name = "btnRivers";
-            this.btnRivers.Size = new System.Drawing.Size(99, 51);
+            this.btnRivers.Size = new System.Drawing.Size(160, 98);
             this.btnRivers.TabIndex = 2;
             this.btnRivers.Text = "Rivers";
             this.btnRivers.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             // 
             // btnLakes
             // 
-            this.btnLakes.Location = new System.Drawing.Point(183, 111);
+            this.btnLakes.Location = new System.Drawing.Point(34, 69);
             this.btnLakes.Name = "btnLakes";
-            this.btnLakes.Size = new System.Drawing.Size(92, 51);
+            this.btnLakes.Size = new System.Drawing.Size(160, 93);
             this.btnLakes.TabIndex = 3;
             this.btnLakes.Text = "Lakes";
             this.btnLakes.UseVisualStyleBackColor = true;
@@ -81,9 +81,9 @@
             // 
             // btnMountains
             // 
-            this.btnMountains.Location = new System.Drawing.Point(328, 31);
+            this.btnMountains.Location = new System.Drawing.Point(328, 69);
             this.btnMountains.Name = "btnMountains";
-            this.btnMountains.Size = new System.Drawing.Size(75, 47);
+            this.btnMountains.Size = new System.Drawing.Size(161, 89);
             this.btnMountains.TabIndex = 4;
             this.btnMountains.Text = "Mountains";
             this.btnMountains.UseVisualStyleBackColor = true;
@@ -91,9 +91,9 @@
             // 
             // btnSeas
             // 
-            this.btnSeas.Location = new System.Drawing.Point(328, 111);
+            this.btnSeas.Location = new System.Drawing.Point(328, 200);
             this.btnSeas.Name = "btnSeas";
-            this.btnSeas.Size = new System.Drawing.Size(75, 51);
+            this.btnSeas.Size = new System.Drawing.Size(161, 87);
             this.btnSeas.TabIndex = 5;
             this.btnSeas.Text = "Seas";
             this.btnSeas.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@
             // 
             // btnRegions
             // 
-            this.btnRegions.Location = new System.Drawing.Point(463, 29);
+            this.btnRegions.Location = new System.Drawing.Point(592, 69);
             this.btnRegions.Name = "btnRegions";
-            this.btnRegions.Size = new System.Drawing.Size(75, 49);
+            this.btnRegions.Size = new System.Drawing.Size(152, 89);
             this.btnRegions.TabIndex = 6;
             this.btnRegions.Text = "Regions";
             this.btnRegions.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(463, 111);
+            this.btnLogout.Location = new System.Drawing.Point(700, 387);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 51);
             this.btnLogout.TabIndex = 7;
@@ -121,7 +121,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(581, 31);
+            this.btnExit.Location = new System.Drawing.Point(700, 311);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 47);
             this.btnExit.TabIndex = 8;

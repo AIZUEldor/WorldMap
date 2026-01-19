@@ -7,7 +7,7 @@ Ushbu loyiha dunyo geografik obyektlari bo‘yicha ma’lumotlarni saqlash va bo
 Maqsad
 
 Geografik obyektlar o‘rtasidagi bog‘lanishlarni to‘g‘ri modellashtirish va ular ustida CRUD amallarini bajarish.
-
+![Demo](demo3.gif)
 
 Ma’lumotlar bazasi obyektlari
 
